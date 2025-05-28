@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class client{
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("192.168.18.76", 8888);// nw czy trzeba ip dawac
+            Socket socket = new Socket(8888);// nw czy trzeba ip dawac
             ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
 
